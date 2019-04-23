@@ -14,6 +14,11 @@
   </head>
   <body>
     <ons-page>
+      <script>
+        function sayHello() {
+          ons.notification.alert('Hello world');
+        }
+      </script>
       <ons-toolbar>
         <div class="center">My App</div>
         <div class="right">
@@ -25,7 +30,6 @@
       <p style="text-align: center">
         <ons-button onclick="sayHello()">Click me!</ons-button>
       </p>
-      <script src="app.js"></script>
     </ons-page>
     <script type="text/javascript" src="cordova.js"></script>
   </body>
